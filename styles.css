@@ -1,0 +1,137 @@
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background: lightgray;
+    box-sizing: border-box;
+}
+.content-wrapper {
+    display: flex;
+    align-items: center;
+}
+.upload {
+    display: flex;
+    padding: 10px;
+}
+
+.chart {
+    display: flex;
+    height: 70vh;
+}
+
+.controls-wrapper {
+    width: 250px;
+    font-size: 0.9rem;
+    border: 1px solid rgb(31, 142, 179);
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+.controls-wrapper h1 {
+    margin: 0;
+    font-size: 1rem;
+    background-color: rgb(31, 142, 179);
+    color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+
+.controls {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.days-wrapper {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+select {
+    width: 200px;
+    align-self: center;
+    margin: 5px;
+}
+
+.color-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.color-wrapper div {
+    padding: 2px;
+}
+
+.chart-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.tab {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: flex-end;
+    margin-right: 40px;
+    flex-direction: column-reverse;
+}
+
+.tab div {
+    width: 50px;
+}
+
+.tab .col2 {
+    background-color: blue;
+    height: 80%;
+}
+
+.tab .col1 {
+    background-color: green;
+    height: 90px;
+}
+
+.tab .section-aside {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column-reverse;
+    list-style: none;
+    align-items: flex-end;
+    padding-right: 10px;
+    height: 70vh;
+    margin-bottom: -120px;
+}
+
+.numbers li {
+    height: 20%;
+}
+
+.text {
+    margin-top: -20px;
+    position: relative;
+    font-size: 15px;
+    
+}

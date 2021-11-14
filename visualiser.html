@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <ul class="numbers">
+            <li>
+                0
+            </li>
+
+            <li>
+                10
+            </li>
+
+            <li>
+                20
+            </li>
+
+            <li>
+                30
+            </li>
+
+            <li>
+                40
+            </li>
+            <li>
+                50
+            </li>
+            <li>
+                60
+            </li>
+        </ul>
+
+        <div class="chart-wrapper">
+            <div class="chart">
+               
+                <ul class="tabs" id="tabs">
+                    <li class="tab">
+                        <div class="section-main">
+                            <div class="text">
+                                Monday
+                            </div>
+                        </div>
+
+                        <div class="section-aside">
+                            <div class="col1" id="col1">
+
+                            </div>
+                            <div class="col2" id="col2">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab">
+                        <div class="section-main">
+                            <div class="text">
+                                Tuesday
+                            </div>
+                        </div>
+
+                        <div class="section-aside">
+                            <div class="col1" id="col1">
+
+                            </div>
+                            <div class="col2" id="col2">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab">
+                        <div class="section-main">
+                            <div class="text">
+                                August
+                            </div>
+                        </div>
+
+                        <div class="section-aside">
+                            <div class="col1" id="col1">
+
+                            </div>
+                            <div class="col2" id="col2">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab">
+                        <div class="section-main">
+                            <div class="text">
+                                September
+                            </div>
+                        </div>
+
+                        <div class="section-aside">
+                            <div class="col1" id="col1">
+
+                            </div>
+                            <div class="col2" id="col2">
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="controls-wrapper">
+            <form id="addData" class="upload">
+                <input type="file" accept=".csv" id="csvSheet">
+                <br>
+                <input type="submit" value="SUBMIT">
+            </form>
+            <h1>Controls for this chart</h1>
+            <form class="controls" id="control-form">
+                <label for="timeline"><i class="far fa-calendar-alt"></i> Timeline units</label>
+                <select name="timeline" id="timeline">
+                    <option value="day">Day</option>
+                    <option value="month">Month</option>
+                </select>
+                <br><br>
+                <div class="days-wrapper">
+                    <label for="timeline"><i class="far fa-calendar-alt"></i> Work Days Setting</label>
+                    <select name="workdaySetting" id="workdaySetting1">
+                        <option value="1">Monday</option>
+                        <option value="2">Tuesday</option>
+                        <option value="3">Wednesday</option>
+                        <option value="4">Thursday</option>
+                        <option value="5">Friday</option>
+                    </select>
+                    <select name="workdaySetting" id="workdaySetting2">
+                        <option value="1">Monday</option>
+                        <option value="2">Tuesday</option>
+                        <option value="3">Wednesday</option>
+                        <option value="4">Thursday</option>
+                        <option value="5">Friday</option>
+                    </select>
+                </div>
+                <div class="color-wrapper">
+                    <label for="palette"> <i class="fas fa-palette"></i> Color Palette</label>
+                    <div>
+                        <input type="color" id="started" name="started" value="#00ff10">
+                        <label for="started">Started</label>
+                    </div>
+
+                    <div>
+                        <input type="color" id="finished" name="finished" value="#0000FF">
+                        <label for="body">Finished</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="chart.js"></script>
+
+</body>
+
+</html>
