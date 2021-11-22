@@ -2,7 +2,6 @@
 body {
     margin: 0 auto;
     padding: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +20,8 @@ body {
 
 .chart {
     display: flex;
-    height: 70vh;
+    height: 95vh;
+    max-width: 800px;
 }
 
 .controls-wrapper {
@@ -83,7 +83,7 @@ select {
     flex-direction: row;
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
-    width: 100%;
+    overflow-x: scroll;
 }
 
 .tab {
@@ -102,17 +102,21 @@ select {
 .tab .col2 {
     background-color: blue;
     height: 80%;
+    font-size: 12px;
+
 }
 
 .tab .col1 {
     background-color: green;
-    height: 90px;
+    height: 80%;
+    font-size: 12px;
 }
 
 .tab .section-aside {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    
 }
 
 .numbers {
@@ -121,17 +125,16 @@ select {
     list-style: none;
     align-items: flex-end;
     padding-right: 10px;
-    height: 70vh;
-    margin-bottom: -120px;
+    height: 95vh;
+    margin-bottom: -75px;
 }
 
 .numbers li {
-    height: 20%;
+    height: 100%;
 }
 
 .text {
-    margin-top: -20px;
+    margin-top: -50px;
     position: relative;
-    font-size: 15px;
-    
+    font-size: 12px;
 }
